@@ -69,6 +69,10 @@ dialog {
 }
 
 /* General styling*/
+:root {
+  font-family: "Rubik", sans-serif;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -95,9 +99,15 @@ form {
 }
 
 label {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 input {
   border-radius: 0.2;
+  border: rgba(0, 0, 0, 0.6) solid 1px;
+  border-radius: 0.2rem;
+}
+
+.btn {
+  font-size: 0.9rem;
 }
