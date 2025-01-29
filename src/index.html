@@ -3,9 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Form Validation</title>
   </head>
   <body>
-    Hello, there.
+    <form novalidate>
+      <div class="wrapper mail">
+        <label for="mail">Email:</label>
+        <input type="mail" id="mail" name="mail" minlength="8" required />
+        <p class="error" aria-live="polite"></p>
+      </div>
+      <div class="wrapper country">
+        <label for="country">Country:</label
+        ><input
+          type="text"
+          id="country"
+          minlength="4"
+          maxlength="14"
+          required
+        />
+        <p class="error" aria-live="polite"></p>
+      </div>
+      <div class="wrapper zipcode">
+        <label for="zipcode">Zip Code:</label
+        ><input
+          type="text"
+          id="zipcode"
+          name="zipcode"
+          maxlength="10"
+          minlength="3"
+          required
+        />
+        <p class="error" aria-live="polite"></p>
+      </div>
+      <div class="wrapper password">
+        <label for="password">Password:</label
+        ><input type="password" id="password" name="password" required />
+        <p class="error" aria-live="polite"></p>
+      </div>
+      <div class="wrapper password-confirmation">
+        <label for="password-confirmation">Password Confirmation</label
+        ><input
+          type="password"
+          id="password-confirmation"
+          name="password"
+          required
+        />
+        <p class="error" aria-live="polite"></p>
+      </div>
+    </form>
   </body>
 </html>
