@@ -96,6 +96,7 @@ form {
 .wrapper {
   display: flex;
   flex-direction: column;
+  width: 225px;
 }
 
 label {
@@ -110,4 +111,10 @@ input {
 
 .btn {
   font-size: 0.9rem;
+}
+
+.error {
+  color: red;
+  max-width: 100%;
+  font-size: 0.8rem;
 }
